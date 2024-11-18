@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Centers the text horizontally */
+    background-color: darkcyan;
+}
+
+.centered-heading {
+    margin-top: 10px; /* Adjusts the distance from the top */
+    font-size: 36px;
+    font-weight: bold;
+}
+.centered-image {
+    margin-top: 10px;
+    width: 90%;
+    height: auto;
+}
+.tabs {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}

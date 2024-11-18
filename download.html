@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sheikh Industry - Download</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Heading -->
+        <h1>Sheikh Industry</h1>
+
+        <!-- Search Bar -->
+        <div class="search-bar">
+            <input type="text" placeholder="Search files...">
+        </div>
+
+        <div class="files-grid">
+            <div class="file-item">
+                <p>AutoClicker.py</p>
+                <a href="downloads/autoclick.py" download class="download-link">
+                    <button class="download-btn">Download</button>
+                </a>
+            </div>
+            <div class="file-item">
+                <p>Kin-Bruteforce</p>
+                <a href="downloads/kin-bruteforce.py" download class="download-link">
+                    <button class="download-btn">Download</button>
+                </a>
+            </div>
+            <div class="file-item">
+                <p>Kin-DOS</p>
+                <a href="downloads/kin-dos.py" download class="download-link">
+                    <button class="download-btn">Download</button>
+                </a>
+            </div>
+            <div class="file-item">
+                <p>Kin-Password-generator</p>
+                <a href="downloads/kin-passgen.py" download class="download-link">
+                    <button class="download-btn">Download</button>
+                </a>
+            </div>
+            <div class="file-item">
+                <p>Kin-scan</p>
+                <a href="downloads/kin-scan.py" download class="download-link">
+                    <button class="download-btn">Download</button>
+                </a>
+            </div>
+            <div class="file-item">
+                <p>Kin-SQL-enjection</p>
+                <a href="downloads/kin-sql.py" download class="download-link">
+                    <button class="download-btn">Download</button>
+                </a>
+            </div>
+        </div>        
+    </div>
+</body>
+</html>
+
+
+<script>
+    const searchInput = document.getElementById('searchInput');
+    const fileItems = document.querySelectorAll('.file-item');
+
+    searchInput.addEventListener('input', function() {
+        const query = searchInput.value.toLowerCase();
+        fileItems.forEach(item => {
+            const fileName = item.textContent.toLowerCase();
+            item.style.display = fileName.includes(query) ? 'block' : 'none';
+        });
+    });
+</script>
